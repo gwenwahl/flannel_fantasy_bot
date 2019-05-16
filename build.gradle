@@ -29,12 +29,13 @@ dependencies {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "12"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "12"
 }
 
+// Task that Heroku uses to build the bot
 task stage(dependsOn: ['jar', 'clean'])
 jar.mustRunAfter clean
 
@@ -43,6 +44,5 @@ jar {
         attributes 'Main-Class': 'flannel.FlannelBotApplication'
     }
 
-    // NEW LINE HERE !!!
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }

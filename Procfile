@@ -1,1 +1,1 @@
-worker: ./gradlew :run
+worker: java --jar ./build/libs/bot-0.1.jar

@@ -3,7 +3,7 @@
 A Discord bot for the Flannel Fantasy Discord server
 
 ## Setup
-Our bot is written in Kotlin using the Discord4j library to communicate with Discord.
+Our bot is written in Kotlin using the Javacord library to communicate with Discord.
 
 In order to test the bot yourself, you'll need a bot token, which you can get at the Discord [developer portal](https://discordapp.com/developers/applications/).
 
